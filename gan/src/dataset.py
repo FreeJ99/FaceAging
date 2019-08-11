@@ -48,7 +48,7 @@ class FacesData(DataSet):
         self.img_size = img_size
         self.channels = 3
         self.crop_size = crop_size
-        images_folder_path = os.path.join(project_path.base, "data", "lfw-deepfunneled")
+        images_folder_path = os.path.join(project_path.base, "data", "train")
         self.images_path = []
         for (dirpath, dirnames, fnames) in os.walk(images_folder_path):
             for fname in fnames:

@@ -3,7 +3,7 @@ from wgan import *
 from generators import *
 from critics import *
 
-dataset = FacesData(img_size=32)
+dataset = FacesData(img_size=128)
 # dataset = MNISTData()
 
 generator = FCGenerator(img_size=dataset.img_size,
